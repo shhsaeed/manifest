@@ -11,18 +11,21 @@
            fetch="https://github.com/AOSPB"
            revision="mm6.0" />
 
+  <remote name="zos"
+            fetch="https://github.com/Zephyr-OS" 
+            revision="zos6.0.1" />
+
   <default revision="refs/tags/android-6.0.1_r17"
            remote="aosp"
            sync-j="4" />
 
-  <project name="AOSP-RRO/platform_build" path="build" groups="pdk,tradefed" remote="github" revision="marshmallow" >
+  <project name="Zephyr-OS/platform_build" path="build" groups="pdk,tradefed" remote="zos" revision="zos6.0.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
 <!-- AOSP-RRO -->
   <project name="AOSP-RRO/platform_art" path="art" groups="pdk" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_external_sepolicy" path="external/sepolicy" groups="pdk" remote="github" revision="marshmallow" />
-  <project name="AOSP-RRO/platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_frameworks_av" path="frameworks/av" groups="pdk" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_frameworks_native" path="frameworks/native" groups="pdk" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_frameworks_opt_net_ims" path="frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" remote="github" revision="marshmallow" />
@@ -38,21 +41,17 @@
   <project name="AOSP-RRO/platform_packages_apps_InCallUI" path="packages/apps/InCallUI" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_packages_apps_Mms" path="packages/apps/Mms" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="github" revision="marshmallow" />
-  <project name="AOSP-RRO/platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_packages_apps_Stk" path="packages/apps/Stk" remote="github" revision="marshmallow" />
-  <project name="AOSP-RRO/platform_packages_apps_Terminal" path="packages/apps/Terminal" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" groups="pdk-cw-fs" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="github" revision="marshmallow" />
-  <project name="AOSP-RRO/platform_packages_providers_MediaProvider" path="packages/providers/mediaProvider" remote="github" revision="marshmallow" />
+  <project name="AOSP-RRO/platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_packages_services_Mms" path="packages/services/Mms" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_packages_services_Telecomm" path="packages/services/Telecomm" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_system_core" groups="pdk" path="system/core" remote="github" revision="marshmallow" />
   <project name="AOSP-RRO/platform_system_extras" groups="pdk" path="system/extras" remote="github" revision="marshmallow" />
-  <project name="AOSP-RRO/platform_system_vold" groups="pdk" path="system/vold" remote="github" revision="marshmallow" />
-  <project name="AOSP-RRO/platform_vendor_aosp" path="vendor/aosp" remote="github" revision="marshmallow" />
-  <project name="AOSP-RRO/manifest" path="manifest" remote="github" revision="marshmallow" />
+  <project name="Zephyr-OS/manifest" path="manifest" remote="zos" revision="zos6.0.1" />
 
 <!-- CyanogenMod -->
   <project name="CyanogenMod/android_bionic" path="bionic" groups="pdk" remote="github" revision="cm-13.0" />
@@ -84,6 +83,7 @@
   <project path="external/ntfs-3g" name="CyanogenMod/android_external_ntfs-3g" remote="github" revision="cm-13.0" />
   <project path="external/okhttp" name="CyanogenMod/android_external_okhttp" groups="pdk-cw-fs,pdk-fs" remote="github" revision="cm-13.0" />
   <project path="external/strace" name="CyanogenMod/android_external_strace" groups="pdk-cw-fs,pdk-fs" remote="github" revision="cm-13.0" />
+  <project path="external/sony/boringssl-compat" name="CyanogenMod/android_external_sony_boringssl-compat" remote="github" revision="cm-13.0" />
   <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" groups="pdk" remote="github" revision="cm-13.0" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_external_skia" path="external/skia" groups="pdk-cw-fs,qcom_msm8x26" remote="github" revision="cm-13.0" />
@@ -128,7 +128,8 @@
   <project path="vendor/qcom/opensource/display-frameworks" name="CyanogenMod/android_vendor_qcom_opensource_display-frameworks" remote="github" revision="cm-13.0" />
   <project path="vendor/qcom/opensource/dpm" name="CyanogenMod/android_vendor_qcom_opensource_dpm" remote="github" revision="cm-13.0" />
   <project path="vendor/qcom/opensource/time-services" name="CyanogenMod/android_vendor_qcom_opensource_time-services" remote="github" revision="cm-13.0" />
-
+  <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" remote="github" revision="cm-13.0" />
+  <project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" remote="github" revision="cm-13.0" />
 <!-- AOSP -->
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -438,7 +439,6 @@
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
-  <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" groups="pdk-fs" />
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" groups="generic_fs" />
@@ -466,19 +466,11 @@
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="platform_testing" name="platform/platform_testing" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
-  <project path="prebuilts/clang/darwin-x86/host/3.6" name="platform/prebuilts/clang/darwin-x86/host/3.6" groups="pdk,darwin" />
   <project path="prebuilts/clang/linux-x86/host/3.6" name="platform/prebuilts/clang/linux-x86/host/3.6" groups="pdk,linux" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" />
   <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" groups="pdk" />
   <project path="prebuilts/eclipse-build-deps" name="platform/prebuilts/eclipse-build-deps" groups="notdefault,eclipse" />
   <project path="prebuilts/eclipse-build-deps-sources" name="platform/prebuilts/eclipse-build-deps-sources" groups="notdefault,eclipse" />
-  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,darwin,arm" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" groups="pdk,darwin,arm" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" groups="pdk,darwin,arm" />
-  <project path="prebuilts/gcc/darwin-x86/host/headers" name="platform/prebuilts/gcc/darwin-x86/host/headers" groups="pdk,darwin" />
-  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" />
-  <project path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" groups="pdk,darwin,mips" />
-  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" groups="pdk,darwin,x86" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" />
@@ -492,7 +484,6 @@
   <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
-  <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
@@ -521,5 +512,12 @@
   <project path="packages/apps/SamsungServiceMode" name="packages_apps_SamsungServiceMode" remote="aospb" />
   <!-- qrngd -->
   <project path="external/qrngd" name="external_qrngd" remote="aospb" />
+
+  <!-- ZephyrOS -->
+  <project name="Zephyr-OS/platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="zos" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_packages_apps_Settings" path="packages/apps/Settings" remote="zos" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_system_vold" path="system/vold" remote="zos" revision="zos6.0.1" />
+  <project name="Zephyr-OS/android_packages_apps_Eleven" path="packages/apps/Eleven" remote="zos" revision="zos6.0.1" />
+  <project name="Zephyr-OS/vendor_zos" path="vendor/zos" remote="zos" revision="zos6.0.1" />
 
 </manifest>
