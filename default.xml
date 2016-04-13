@@ -447,7 +447,6 @@
   <project path="packages/providers/BookmarkProvider" name="platform/packages/providers/BookmarkProvider" groups="pdk-fs" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs" />
   <project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs" />
-  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="aospb" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" />
@@ -527,4 +526,5 @@
   <project name="Zephyr-OS/android_packages_apps_Eleven" path="packages/apps/Eleven" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/vendor_zos" path="vendor/zos" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_providers_MediaProvider" remote="github" revision="zos6.0.1" />
+  <project path="packages/providers/DownloadProvider" name="Zephyr-OS/packages_providers_DownloadProvider" remote="github" revision="zos6.0.1" />
 </manifest>
