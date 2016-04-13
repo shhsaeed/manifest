@@ -15,6 +15,6 @@ repo sync
 ``` 
 Finally to build: 
 ````bash 
-./build.sh device_codename 
+. build/build.sh device_codename 
 ```
 
