@@ -1,7 +1,7 @@
 <img src="https://raw.githubusercontent.com/Zephyr-OS/manifest/zos6.0.1/zephyrOS-logo.png">
 
-zephyrOS MarshMallow [WIP] 
-===========
+zephyrOS MarshMallow  
+====================
 
 This rom is based on the AOSP-RRO project and thanks to that team
 
