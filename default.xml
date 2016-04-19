@@ -138,7 +138,7 @@
 
 <!-- AOSP -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="bootable/recovery" name="bootable_recovery" remote="slim" />
+  <project path="bootable/recovery" name="AOSP-RRO/platform_bootable_recovery" remote="github" revision="marshmallow" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -194,7 +194,7 @@
   <project path="external/crcalc" name="platform/external/crcalc" groups="pdk-fs" />
   <project path="external/deqp" name="platform/external/deqp" groups="pdk-fs" />
   <project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/dhcpcd" name="SlimRoms/android_external_dhcpcd" remote="github" revision="mm6.0" />
+  <project path="external/dhcpcd" name="AOSP-RRO/platform_external_dhcpcd" remote="github" revision="marshmallow" />
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/donuts" name="platform/external/donuts" groups="pdk-fs" />
@@ -384,7 +384,7 @@
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="slim" />
+  <project path="hardware/broadcom/libbt" name="AOSP-RRO/platform_hardware_broadcom_libbt" remote="github" revision="marshmallow" />
   <project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan" remote="slim" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
@@ -415,17 +415,17 @@
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan" remote="slim" revision="mm6.0-caf" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
-  <project path="packages/apps/BasicSmsReceiver" name="packages_apps_BasicSmsReceiver" remote="slim" />
+  <project path="packages/apps/BasicSmsReceiver" name="AOSP-RRO/platform_packages_apps_BasicSmsReceiver" remote="github" revision="marshmallow" />
   <project path="packages/apps/BluetoothExt" name="packages_apps_BluetoothExt" remote="slim" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs" />
   <project path="packages/apps/Calendar" name="packages_apps_Calendar" remote="slim" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" groups="pdk-fs" />
   <project path="packages/apps/Camera2" name="packages_apps_Camera2" remote="slim" />
   <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-fs" />
-  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="slim" />
+  <project path="packages/apps/CellBroadcastReceiver" name="AOSP-RRO/platform_packages_apps_CellBroadcastReceiver" remote="github" revision="marshmallow" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="slim" />
-  <project path="packages/apps/Email" name="packages_apps_Email" remote="slim" />
+  <project path="packages/apps/Email" name="AOSP-RRO/platform_packages_apps_Email" remote="github" revision="marshmallow" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
   <project path="packages/apps/Exchange" name="packages_apps_Exchange" remote="slim" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
@@ -437,7 +437,7 @@
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="slim" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs" />
-  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="slim" groups="apps_nfc,pdk-fs" />
+  <project path="packages/apps/Nfc" name="AOSP-RRO/platform_packages_apps_Nfc" remote="github" revision="marshmallow" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" groups="pdk-fs" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
@@ -447,7 +447,7 @@
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" groups="pdk-fs" />
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" groups="generic_fs" />
-  <project path="packages/apps/UnifiedEmail" name="packages_apps_UnifiedEmail" remote="slim" />
+  <project path="packages/apps/UnifiedEmail" name="AOSP-RRO/platform_packages_apps_UnifiedEmail" remote="github" revision="marshmallow" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" groups="pdk-fs" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" groups="pdk-fs" />
@@ -498,10 +498,10 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" clone-depth="1" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" clone-depth="1" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
-  <project path="system/bt" name="android_system_bt" remote="slim" />
+  <project path="system/bt" name="AOSP-RRO/platform_system_bt" remote="github" revision="marshmallow" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
-  <project path="system/keymaster" name="android_system_keymaster" remote="slim" />
-  <project path="system/security" name="android_system_security" remote="slim" />
+  <project path="system/keymaster" name="AOSP-RRO/platform_system_keymaster" remote="github" revision="marshmallow" />
+  <project path="system/security" name="AOSP-RRO/platform_system_security" remote="github" revision="marshmallow" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
