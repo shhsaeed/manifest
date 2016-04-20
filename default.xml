@@ -527,5 +527,5 @@
   <project name="Zephyr-OS/system_vold" path="system/vold" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/android_packages_apps_Eleven" path="packages/apps/Eleven" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/vendor_zos" path="vendor/zos" remote="github" revision="zos6.0.1" />
-  <project name="Zephyr-OS/platform_packages_providers_MediaProvider" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="github" revision="zos6.0.1" />
 </manifest>
