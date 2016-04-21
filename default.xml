@@ -20,7 +20,7 @@
 
   <default revision="refs/tags/android-6.0.1_r24"
            remote="aosp"
-           sync-j="32"
+           sync-j="8"
            sync-c="true"
            sync-f="true"
            sync-q="true" />
@@ -431,7 +431,7 @@
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
-  <project path="packages/apps/Launcher3" name="AOSPB/packages_apps_Launcher3" remote="github" />
+  <project path="packages/apps/Launcher3" name="AOSP-RRO/platform_packages_apps_Launcher3" remote="github" revision="marshmallow" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="slim" />
