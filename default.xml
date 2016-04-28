@@ -61,7 +61,6 @@
   <project path="packages/apps/UnifiedEmail" name="platform_packages_apps_UnifiedEmail" remote="rro" />
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="rro" />
   <project name="platform_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" groups="pdk-cw-fs" remote="rro" />
-  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="rro" />
   <project name="platform_packages_services_Mms" path="packages/services/Mms" remote="rro" />
   <project path="system/bt" name="platform_system_bt" remote="rro" />
   <project name="platform_system_core" groups="pdk" path="system/core" remote="rro" />
@@ -544,4 +543,5 @@
   <project name="Zephyr-OS/platform_frameworks_opt_telephony" path="frameworks/opt/telephony" groups="pdk" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="zos6.0.1" />
+  <project path="packages/providers/DownloadProvider" name="Zephyr-OS/platform_packages_providers_DownloadProvider" remote="github" revision="zos6.0.1" />
 </manifest>
