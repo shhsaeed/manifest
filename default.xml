@@ -68,6 +68,8 @@
   <project name="platform_system_extras" groups="pdk" path="system/extras" remote="rro" />
   <project path="system/keymaster" name="platform_system_keymaster" remote="rro" />
   <project path="system/security" name="platform_system_security" remote="rro" />
+  <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="rro" revision="wew" />
+  <project path="external/DUtils" name="platform_external_DUtils" remote="rro" revision="wew" />
   <project name="Zephyr-OS/manifest" path="manifest" remote="github" revision="zos6.0.1" />
   
 <!-- CyanogenMod -->
