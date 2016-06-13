@@ -553,5 +553,4 @@
   <project name="Zephyr-OS/platform_frameworks_opt_telephony" path="frameworks/opt/telephony" groups="pdk" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="zos6.0.1" />
-  <project path="packages/providers/DownloadProvider" name="Zephyr-OS/platform_packages_providers_DownloadProvider" remote="github" revision="zos6.0.1" />
 </manifest>
