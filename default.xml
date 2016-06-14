@@ -155,6 +155,7 @@
   <project path="vendor/qcom/opensource/dpm" name="CyanogenMod/android_vendor_qcom_opensource_dpm" remote="github" revision="cm-13.0" />
   <project path="vendor/qcom/opensource/time-services" name="CyanogenMod/android_vendor_qcom_opensource_time-services" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_system_vold" path="system/vold" remote="github" revision="cm-13.0" />
+  <project name="CyanogenMod/android_packages_apps_Eleven" path="packages/apps/Eleven" remote="github" revision="cm-13.0" />
 
 <!-- AOSP -->
 
@@ -543,7 +544,6 @@
 <!-- ZephyrOS -->
   <project name="Zephyr-OS/platform_frameworks_base" path="frameworks/base" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="zos6.0.1" />
-  <project name="Zephyr-OS/android_packages_apps_Eleven" path="packages/apps/Eleven" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/vendor_zos" path="vendor/zos" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_services_Telecomm" path="packages/services/Telecomm" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="github" revision="zos6.0.1" />
