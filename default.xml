@@ -49,14 +49,11 @@
   <project path="packages/apps/BasicSmsReceiver" name="platform_packages_apps_BasicSmsReceiver" remote="rro" />
   <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" groups="pdk-cw-fs" remote="rro" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform_packages_apps_CellBroadcastReceiver" remote="rro" />
-  <project name="platform_packages_apps_Contacts" path="packages/apps/Contacts" remote="rro" />
-  <project name="platform_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" remote="rro" />
   <project path="packages/apps/Email" name="platform_packages_apps_Email" remote="rro" />
   <project path="packages/apps/Exchange" name="platform_packages_apps_Exchange" remote="rro" />
   <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="rro" />
   <project name="platform_packages_apps_Mms" path="packages/apps/Mms" remote="rro" />
   <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="rro" />
-  <project name="platform_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="rro" />
   <project name="platform_packages_apps_Stk" path="packages/apps/Stk" remote="rro" />
   <project name="platform_packages_apps_Terminal" path="packages/apps/Terminal" remote="rro" />
   <project path="packages/apps/UnifiedEmail" name="platform_packages_apps_UnifiedEmail" remote="rro" />
@@ -551,4 +548,7 @@
   <project name="Zephyr-OS/platform_frameworks_opt_telephony" path="frameworks/opt/telephony" groups="pdk" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_packages_apps_Contacts" path="packages/apps/Contacts" remote="github" revision="zos6.0.1" />
 </manifest>
