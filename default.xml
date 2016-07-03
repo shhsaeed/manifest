@@ -65,8 +65,6 @@
   <project name="platform_system_extras" groups="pdk" path="system/extras" remote="rro" />
   <project path="system/keymaster" name="platform_system_keymaster" remote="rro" />
   <project path="system/security" name="platform_system_security" remote="rro" />
-  <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="rro" revision="wew" />
-  <project path="external/DUtils" name="platform_external_DUtils" remote="rro" revision="wew" />
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="rro" />
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="rro" />
   <project name="Zephyr-OS/manifest" path="manifest" remote="github" revision="zos6.0.1" />
@@ -553,4 +551,6 @@
   <project name="Zephyr-OS/platform_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_apps_Contacts" path="packages/apps/Contacts" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_packages_apps_DUI" path="packages/apps/DUI" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/Platform_external_DUtils" path="external/DUtils" remote="github" revision="zos6.0.1" />
 </manifest>
