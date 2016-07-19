@@ -101,6 +101,7 @@
   <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" groups="pdk" remote="github" revision="cm-13.0" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" remote="github" revision="cm-13.0" />
   <project path="external/sony/boringssl-compat" name="CyanogenMod/android_external_sony_boringssl-compat" remote="github" revision="cm-13.0" />
+  <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_external_skia" path="external/skia" groups="pdk-cw-fs,qcom_msm8x26" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_external_stagefright-plugins" path="external/stagefright-plugins" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_external_tinyalsa" path="external/tinyalsa" groups="pdk" remote="github" revision="cm-13.0" />
