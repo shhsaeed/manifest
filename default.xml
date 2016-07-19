@@ -543,7 +543,10 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel" name="DespairFactor/aarch64-linux-android-5.x-kernel" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.0-kernel" name="UBERTC/aarch64-linux-android-6.0-kernel" remote="bb" revision="master" />
 
-<!-- ZephyrOS -->
+  <!-- Masquerade -->
+  <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="master" />
+
+  <!-- ZephyrOS -->
   <project name="Zephyr-OS/platform_frameworks_base" path="frameworks/base" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/vendor_zos" path="vendor/zos" remote="github" revision="zos6.0.1" />
