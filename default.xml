@@ -34,13 +34,10 @@
     <copyfile src="build.sh" dest="build.sh" />
   </project>
 
-<!-- AOSP-RRO -->
-  <project name="platform_art" path="art" groups="pdk" remote="rro" />
+  <!-- AOSP-RRO -->
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="rro" />
-  <project name="platform_external_sepolicy" path="external/sepolicy" groups="pdk" remote="rro" />
   <project path="external/dhcpcd" name="platform_external_dhcpcd" remote="rro" />
   <project name="platform_frameworks_av" path="frameworks/av" groups="pdk" remote="rro" />
-  <project name="platform_frameworks_native" path="frameworks/native" groups="pdk" remote="rro" />
   <project name="platform_frameworks_opt_net_ims" path="frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" remote="rro" />
   <project name="platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="rro" groups="pdk" />
   <project name="platform_hardware_libhardware" path="hardware/libhardware" groups="pdk" remote="rro" />
@@ -61,7 +58,6 @@
   <project name="platform_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" groups="pdk-cw-fs" remote="rro" />
   <project name="platform_packages_services_Mms" path="packages/services/Mms" remote="rro" />
   <project path="system/bt" name="platform_system_bt" remote="rro" />
-  <project name="platform_system_core" groups="pdk" path="system/core" remote="rro" />
   <project name="platform_system_extras" groups="pdk" path="system/extras" remote="rro" />
   <project path="system/keymaster" name="platform_system_keymaster" remote="rro" />
   <project path="system/security" name="platform_system_security" remote="rro" />
@@ -70,7 +66,6 @@
   <project name="Zephyr-OS/manifest" path="manifest" remote="github" revision="zos6.0.1" />
   
 <!-- CyanogenMod -->
-  <project name="CyanogenMod/android_bionic" path="bionic" groups="pdk" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="cm-13.0" />
   <project path="development" name="CyanogenMod/android_development" groups="pdk-cw-fs,pdk-fs" remote="github" revision="cm-13.0" />
@@ -79,7 +74,6 @@
   <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="github" revision="cm-13.0" /> 
   <project name="CyanogenMod/android_external_ffmpeg" path="external/ffmpeg" remote="github" revision="cm-13.0" />
   <project path="external/bash" name="CyanogenMod/android_external_bash" remote="github" revision="cm-13.0" />
-  <project path="libcore" name="CyanogenMod/android_libcore" groups="pdk" remote="github" revision="cm-13.0" />
   <project path="external/apache-http" name="CyanogenMod/android_external_apache-http" groups="pdk" remote="github" revision="cm-13.0" />
   <project path="external/connectivity" name="CyanogenMod/android_external_connectivity" remote="github" revision="cm-13.0" />
   <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" groups="pdk" remote="github" revision="cm-13.0" />
@@ -162,7 +156,6 @@
 <!-- AOSP -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
-  <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
@@ -561,4 +554,11 @@
   <project name="Zephyr-OS/platform_packages_apps_Contacts" path="packages/apps/Contacts" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/platform_packages_apps_DUI" path="packages/apps/DUI" remote="github" revision="zos6.0.1" />
   <project name="Zephyr-OS/Platform_external_DUtils" path="external/DUtils" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_art" path="art" remote="github" revision="zos6.0.1" /> 
+  <project name="Zephyr-OS/platform_system_core" path="system/core" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_frameworks_native" path="frameworks/native" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_external_sepolicy" path="external/sepolicy" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_bionic" path="bionic" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_dalvik" path="dalvik" remote="github" revision="zos6.0.1" />
+  <project name="Zephyr-OS/platform_libcore" path="libcore" remote="github" revision="zos6.0.1" />
 </manifest>
